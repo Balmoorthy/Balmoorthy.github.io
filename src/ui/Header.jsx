@@ -16,11 +16,9 @@ const NavBar = styled.ul`
 `
 
 const NavLink = styled.a`
-     
+     font-size: 1.8rem;
     cursor: pointer;
     
-    
-
     &:hover{
         /* color: var(--color-rose-600); */
         color: var(--color-grey-50);
@@ -33,7 +31,7 @@ function Header() {
         <StyledHeader>
             <NavBar>
                 
-                <NavLink>Home</NavLink>
+                <NavLink href="/">Home</NavLink>
                 <NavLink>About</NavLink>
                 <NavLink>Projects</NavLink>
                 <NavLink>Contact</NavLink>

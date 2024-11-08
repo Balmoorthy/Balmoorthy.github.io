@@ -8,9 +8,10 @@ function App() {
     <>
     <GlobalStyles/>
     <AppLayout/>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="grid">
+
+      </div>
+      
     </>
   )
 }
