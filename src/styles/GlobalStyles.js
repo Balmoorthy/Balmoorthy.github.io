@@ -1,5 +1,4 @@
-
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -32,10 +31,32 @@ const GlobalStyles = createGlobalStyle`
   --color-silver-700: #374151;
   --color-indigo-100: #e0e7ff;
   --color-indigo-700: #4338ca;
-
-  --color-red-100: #fee2e2;
   --color-red-700: #b91c1c;
   --color-red-800: #991b1b;
+
+  --color-primary-100: #ffe5ec;
+  --color-primary-200: #ffb3c6;
+  --color-primary-300: #e63946;
+
+  --color-secondary-100:#E9FFFD;
+  --color-secondary-200:#C4FFF9;
+  --color-secondary-300:#68D8D6;
+  --color-secondary-400:#07beb8;
+
+ 
+  /*
+  Color Style
+#e63946
+#E9FFFD
+#ffb3c6
+#ffe5ec
+
+Secondary 
+#07beb8
+#68D8D6
+#C4FFF9
+#E9FFFD
+*/
 
   --color-rose-600: #e11d48;
 
@@ -127,12 +148,13 @@ html {
 body {
   font-family: "Afacad Flux", sans-serif;
   color: var(--color-grey-700);
+  background-color: var(--color-grey-800);
 
   transition: color 0.3s, background-color 0.3s;
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
-
+overflow-y: hidden;
   
 }
 

@@ -1,21 +1,24 @@
-import styled from "styled-components"
-import Header from "./Header"
+import styled from 'styled-components';
+import Header from './Header';
+import HeroSection from './HeroSection';
+import Projects from './Projects';
 
 const Container = styled.div`
-    max-width: 120rem;
-`
-
+  max-width: 120rem;
+  padding: 3rem;
+`;
 
 function AppLayout() {
-    return (
-        <div>
-            <Header/>
+  return (
+    <div>
+      <Header />
 
-            <Container>
-                
-            </Container>
-        </div>
-    )
+      <Container>
+        <HeroSection />
+        <Projects />
+      </Container>
+    </div>
+  );
 }
 
-export default AppLayout
+export default AppLayout;

@@ -1,2 +1,2 @@
 const x = 2;
-const c=3
+const c = 3;
