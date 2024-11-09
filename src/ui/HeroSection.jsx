@@ -2,25 +2,47 @@ import styled from 'styled-components';
 
 const StyledContainer = styled.div`
   margin-top: 5rem;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   position: relative;
   color: var(--color-primary-100);
 
-  &::before {
+  /* &::before {
     content: '';
     position: absolute;
     right: 0;
-    top: -18%;
+    top: -10%;
     width: 35rem;
     height: 45rem;
     z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: var(--color-brand-200);
-    background-image: url(./bal-moorthy.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: rotate(12deg);
+    /* background-image: url(./bal-moorthy.webp); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* transform: rotate(12deg); */
+  /* } */
+
+  &:nth-child(2) {
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -10%;
+      width: 35rem;
+      height: 45rem;
+      z-index: 100;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      background-color: var(--color-brand-200);
+      /* background-image: url(./bal-moorthy.webp); */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: rotate(12deg);
+    }
   }
 
   &::after {
@@ -42,7 +64,7 @@ const StyledContainer = styled.div`
 `;
 
 const StyledHeading = styled.h1`
-  font-size: 9.6rem;
+  font-size: 8.4rem;
   line-height: 1;
 `;
 
@@ -51,13 +73,23 @@ const StyledLabel = styled.p`
   font-weight: 100;
 `;
 
+const Image = styled.img`
+  width: 100%;
+  position: relative;
+`;
+
 function HeroSection() {
   return (
     <StyledContainer>
-      <StyledLabel as="h1">I'm a Full-Stack Developer and Web Designer,</StyledLabel>
-      <StyledHeading>
-        Pushing Boundaries <br /> with Code and Creativity, One Pixel at a Time.
-      </StyledHeading>
+      <div>
+        <StyledLabel as="h1">I&apos;m a Full-Stack Developer and Web Designer,</StyledLabel>
+        <StyledHeading>
+          Pushing Boundaries with Code and Creativity, One Pixel at a Time.
+        </StyledHeading>
+      </div>
+      <div>
+        <Image src="./bal-moorthy.webp" />
+      </div>
     </StyledContainer>
   );
 }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { projects } from '../../public/data/projects';
+import ProjectTable from './ProjectTable';
 
 const StyledContainer = styled.div`
   display: grid;
@@ -7,9 +8,13 @@ const StyledContainer = styled.div`
 `;
 
 function Projects() {
-  const { name, image } = projects;
-  console.log(name, image);
-  return <div></div>;
+  return (
+    <div>
+      {projects.map((project) => (
+        <ProjectTable project={project} key={project.id} />
+      ))}
+    </div>
+  );
 }
 
 export default Projects;

@@ -6,6 +6,7 @@ import Projects from './Projects';
 const Container = styled.div`
   max-width: 120rem;
   padding: 3rem;
+  margin: auto;
 `;
 
 function AppLayout() {
